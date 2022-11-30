@@ -435,6 +435,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: url("../images/hero/mob/hero@x1.jpg");
   }
 }
@@ -448,17 +450,19 @@ body {
     background-image: url("../images/hero/mob/hero@x3.jpg");
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: url("../images/hero/tab/hero@x1.jpg");
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero/tab/hero@x2.jpg");
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 3dppx) {
+@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 3), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 1199px) and (min-resolution: 288dpi), screen and (max-width: 1199px) and (min-resolution: 3dppx) {
   .hero {
     background-image: url("../images/hero/tab/hero@x3.jpg");
   }
@@ -1036,11 +1040,13 @@ body {
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  opacity: 1;
 }
 @media screen and (max-width: 1199px) {
   .modal {
     max-width: 450px;
-    overflow-y: scroll;
+    height: 609px;
+    overflow: scroll;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1062,7 +1068,7 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .modal-title {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 }
 
@@ -1178,7 +1184,16 @@ body {
 }
 
 .modal-checkbox {
-  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 31px;
 }
 @media screen and (max-width: 1199px) {
   .modal-checkbox {
@@ -1538,8 +1553,9 @@ body {
 
 .modal-button {
   width: 200px;
+  height: 50px;
   padding: 10px 52px;
-  margin-top: 31px;
+  margin-bottom: -31px;
 }
 
 .button-footer:hover,

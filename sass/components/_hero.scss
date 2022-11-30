@@ -21,6 +21,8 @@
 
 @media screen and (max-width: 767px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: url('../images/hero/mob/hero@x1.jpg');
   }
 
@@ -49,8 +51,10 @@
 }
 
 // Retina x1 Tablet //
-@media screen and (min-width: $tab) {
+@media screen and (max-width: 1199px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: url('../images/hero/tab/hero@x1.jpg');
   }
 

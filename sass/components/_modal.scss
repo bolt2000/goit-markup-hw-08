@@ -25,6 +25,7 @@
 
 // .js-speaker-form {
 //   width: 100%;
+//   padding:40px;
 // }
 
   .modal {
@@ -41,11 +42,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms var(--timing-function);
-
+opacity: 1;
+    
     @media screen and (max-width: 1199px)
      {
           max-width: 450px;
-          overflow-y: scroll;
+          height: 609px;
+          overflow: scroll;
+        
       }
 
     @media  screen and (min-width: $desktop) 
@@ -68,7 +72,7 @@
 
     @media screen and (max-width: 1199px) 
     {
-      margin-bottom: 30px;
+      margin-bottom: 26px;
     }
   }
   
@@ -160,9 +164,8 @@
   }
   
   .modal-checkbox {
-    // @include flexCenter();
-
-    margin-bottom: 30px;
+    @include flexCenter();
+     margin-bottom: 31px;
 
     @media screen and (max-width: 1199px) {
       font-size: 12px;

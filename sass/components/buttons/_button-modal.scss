@@ -27,10 +27,10 @@
   
   .modal-button {
     width: 200px;
+    height: 50px;
     padding: 10px 52px;
     @extend %button;
-
-    margin-top: 31px;
+    margin-bottom: -31px;
   }
   
   .button-footer:hover,
