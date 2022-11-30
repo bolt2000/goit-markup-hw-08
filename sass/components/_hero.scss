@@ -18,7 +18,7 @@
 
 @media screen and (min-width: $mobile) {
     .hero {
-    background-image: url(../images/hero/mob/hero@x1.jpg);
+    background-image: url('../images/hero/mob/hero@x1.jpg');
     }
 
 // Retina x2 //
@@ -28,7 +28,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../images/hero/mob/hero@x2.jpg);
+      background-image: url('../images/hero/mob/hero@x2.jpg');
     }
   }
 
@@ -40,7 +40,7 @@
 (min-resolution: 288dpi),
 (min-resolution: 3dppx) {
   .hero {
-    background-image: url(../images/hero/mob/hero@x3.jpg);
+    background-image: url('../images/hero/mob/hero@x3.jpg');
   }
 }
 }
@@ -48,7 +48,7 @@
 // Retina x1 Tablet //
 @media screen and (min-width: $tab) {
   .hero {
-    background-image: url(../images/hero/tab/hero@x1.jpg);
+    background-image: url('../images/hero/tab/hero@x1.jpg');
   }
 
 
@@ -59,7 +59,7 @@ screen and (-o-min-device-pixel-ratio: 2/1),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/tab/hero@x2.jpg);
+    background-image: url('../images/hero/tab/hero@x2.jpg');
   }
 }
 
@@ -71,7 +71,7 @@ screen and (min-resolution: 2dppx) {
 (min-resolution: 288dpi),
 (min-resolution: 3dppx) {
   .hero {
-    background-image: url(../images/hero/tab/hero@x3.jpg);
+    background-image: url('../images/hero/tab/hero@x3.jpg');
   }
 }
 }
@@ -80,7 +80,7 @@ screen and (min-resolution: 2dppx) {
 @media screen and  (min-width: $desktop) {
   .hero {
     width: 1800px;
-    background-image: url(../images/hero/desk/hero@x1.jpg);
+    background-image: url('../images/hero/desk/hero@x1.jpg');
   }
 
 // Retina x2 Desktop //
@@ -90,7 +90,7 @@ screen and (-o-min-device-pixel-ratio: 2/1),
 screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero/desk/hero@x3.jpg);
+    background-image: url('../images/hero/desk/hero@x2.jpg');
   }
 }
 
@@ -101,7 +101,7 @@ screen and (min-resolution: 2dppx) {
 (min-resolution: 288dpi),
 (min-resolution: 3dppx) {
   .hero {
-    background-image: url('../images/hero/desk/hero@3x.jpg');
+    background-image: url('../images/hero/desk/hero@x3.jpg');
     }
   }
 }
