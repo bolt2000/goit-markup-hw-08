@@ -1,0 +1,26 @@
+:root {
+    --brand-body: #757575;
+    --brand-blue: #2196f3;
+    --brand-black: #212121;
+    --brand-white: #ffffff;
+    --button-main-color: #188ce8;
+    --brand-background: #2f303a;
+    --brand-background2: #f5f4fa;
+    --brand-logo: #000000;
+    --brand-color-border: #eeeeee;
+    --color-border-grey: #afb1b8;
+    --brand-footer: rgba(255, 255, 255, 0.6);
+    --hero-background-fon: rgba(47, 48, 58, 0.4);
+    --background-position: rgba(47, 48, 58, 0.8);
+    --background-position-portfolio: rgba(33, 150, 243, 0.9);
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --timer: 250ms;
+  }
+
+
+
+// Breakpoints
+
+    $mobile: 480px;
+    $tab: 768px;
+    $desktop: 1200px;

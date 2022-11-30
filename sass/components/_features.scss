@@ -1,0 +1,98 @@
+/* =============================================== Feature ============================================= */
+
+.feature {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 94px;
+    padding-bottom: 94px;
+    }
+  }
+  
+  
+  .feature-list
+  {
+    // display: flex;
+
+
+    @media screen and (min-width: $tab)  {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+
+      }
+
+      
+    @media screen and (min-width: $desktop)  {
+      display: flex;
+      }
+   
+  }
+
+  
+  .feature-list__item {
+
+    @media screen and (min-width: $tab) 
+    {
+      margin: 15px;
+      width: calc((100% - 60px) / 2);
+    }
+
+    @media screen and (min-width: $desktop) 
+    {
+     width: 270px;
+    }
+ 
+
+
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      
+      }
+    }
+  }
+
+  
+
+  .feature-list__svg {
+    @include flexCenter();
+    height: 120px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: var(--brand-background2);
+    border-radius: 4px;
+
+    @media screen and (min-width: $tab)  {
+      // width: 100%;
+    }
+
+  
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+}
+
+  .feature-lable {
+    color: var(--brand-black);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @media screen and (max-width: 767px)  {
+      text-align: center;
+      }
+  }
+  
+  .feature-text {
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+
+   
+  

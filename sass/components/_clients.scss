@@ -1,0 +1,119 @@
+/* ========================================== Clients block============================================ */
+
+.clients {
+  @media screen and (max-width: 1199px)
+  {padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+
+  @media screen and (min-width: $desktop)
+  {padding-top: 94px;
+    padding-bottom: 94px;
+  
+}
+}
+
+.clients-title {
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--brand-black);
+   
+
+    @media screen and (min-width: $mobile)
+    {
+      font-size: 28px;
+      margin-bottom: 30px;}
+
+
+    @media screen and (min-width: $desktop)
+    {
+      font-size: 36px;
+      margin-bottom: 50px;}
+    
+  }
+
+
+
+  .clients-list {
+    @media screen and (max-width: 767px)
+    {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: $tab)
+    {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+
+    }
+
+
+    //   @media screen and (min-width: $desktop)
+    // {display: flex;}
+  }
+  
+  .clients-list__link {
+    @include flexCenter();
+    border: 1px solid var(--color-border-grey);
+    border-radius: 4px;
+    height: 92px;
+    fill: var(--color-border-grey);
+    @extend %transition;
+
+    @media screen and (min-width: $mobile)
+    {
+      width: 210px;
+    }
+    
+    @media screen and (min-width: $desktop)
+    {
+      width: 170px;
+    
+    }
+
+    &:hover,
+    &:focus,
+    .clients-list__icon:focus {
+      border: 1px solid var(--brand-blue);
+      outline: none;
+      fill: var(--brand-blue);
+    }
+    
+  }
+  
+  .clients-list__item {
+
+    margin: 15px;
+    @media screen and (min-width: $mobile) and (max-width: 767px)
+    {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+    }
+    
+    @media screen and (min-width: $tab) and (max-width: 1199px)
+    {
+      flex-basis: calc((100% - 6 * 15px) / 3);
+    }
+    
+    @media screen and (min-width: $desktop)
+    {
+      display: inline-block;
+    }
+
+  // &:not(:last-child) {
+  //   @media screen and (min-width: $desktop)
+  // {margin-right: 30px;}
+  // }
+}
+  
+  .clients-list__link:hover,
+  .clients-list__icon:hover {
+    fill: var(--brand-blue);
+  }
+  
