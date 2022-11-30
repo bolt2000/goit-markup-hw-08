@@ -420,8 +420,8 @@ body {
 /* ===== Hero site ===== */
 .hero {
   background-color: var(--brand-background);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-background-fon)), to(var(--hero-background-fon))), url(/images/hero.jpg);
-  background-image: linear-gradient(to right, var(--hero-background-fon), var(--hero-background-fon)), url(/images/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-background-fon)), to(var(--hero-background-fon)));
+  background-image: linear-gradient(to right, var(--hero-background-fon), var(--hero-background-fon));
   padding-top: 200px;
   padding-bottom: 280px;
   text-align: center;
@@ -433,17 +433,17 @@ body {
   background-size: cover;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero {
     background-image: url("../images/hero/mob/hero@x1.jpg");
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero/mob/hero@x2.jpg");
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 3), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 480px) and (min-resolution: 288dpi), screen and (min-width: 480px) and (min-resolution: 3dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 3), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 767px) and (min-resolution: 288dpi), screen and (max-width: 767px) and (min-resolution: 3dppx) {
   .hero {
     background-image: url("../images/hero/mob/hero@x3.jpg");
   }
