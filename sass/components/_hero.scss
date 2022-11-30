@@ -18,7 +18,7 @@
 
 @media screen and (min-width: $mobile) {
     .hero {
-    background-image: url('../images/hero/mob/hero@x1.jpg');
+    background-image: url('https://bolt2000.github.io/goit-markup-hw-08/images/hero/mob/hero@x1.jpg');
     }
 
 // Retina x2 //
@@ -79,7 +79,7 @@ screen and (min-resolution: 2dppx) {
 // Retina x1 Desktop //
 @media screen and  (min-width: $desktop) {
   .hero {
-    max-width: 1600px;
+    // max-width: 1600px;
     background-image: url('../images/hero/desk/hero@x1.jpg');
   }
 
