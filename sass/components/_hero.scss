@@ -1,92 +1,110 @@
 /* ===== Hero site ===== */
 .hero {
     background-color: var(--brand-background);
-    background-image: linear-gradient(
-        to right,
-        var(--hero-background-fon),
-        var(--hero-background-fon)), url('../images/hero/mob/1200.jpg');
     padding-top: 200px;
     padding-bottom: 280px;
     text-align: center;
     max-width: 1600px;
-    // height: 600px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(-o-min-device-pixel-ratio: 2/1),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .hero {
-    background-image: url('../images/hero/tab/800.jpg');
-  }
+    background-size: cover; 
+    background-image: linear-gradient(to right,
+          var(--hero-background-fon),
+          var(--hero-background-fon)),
 }
 
+@media screen and (min-width: $mobile) {
+    .hero {
+    background-image: url('/images/hero/mob/hero@x1.jpg');
+    }
+
+// Retina x2 //
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url('/images/hero/mob/hero@x2.jpg');
+    }
+  }
+
+
+// Retina x3 //
 @media (min-device-pixel-ratio: 3),
 (-webkit-min-device-pixel-ratio: 3),
 (-o-min-device-pixel-ratio: 3/1),
 (min-resolution: 288dpi),
 (min-resolution: 3dppx) {
   .hero {
-    background-image: url('../images/hero/desk/hero-desk@3x.jpg');
+    background-image: url('/images/hero/mob/hero@x3.jpg');
+  }
+}
+}
+
+// Retina x1 Tablet //
+@media screen and (min-width: $tab) {
+  .hero {
+    background-image: url('/images/hero/tab/hero@x1.jpg');
+  }
+
+
+// Retina x2 Tablet //
+@media screen and (min-device-pixel-ratio: 2),
+screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (-o-min-device-pixel-ratio: 2/1),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('/images/hero/tab/hero@x2.jpg');
   }
 }
 
-// // ================================================= mobile hero image ======================================================
-//             @media screen and (max-width: 570px) {
-//               .hero {
-//                 background-image: url('../images/hero/mob/hero@1x.jpg');
-//               }}
-      
-//             @media (min-resolution: 2dppx) {
-//               .hero {
-//                 background-image: url('../images/hero/mob/hero@2x.jpg');
-//               }}
 
-//                @media (min-resolution: 3dppx) {
-//               .hero {
-//                 background-image: url('../images/hero/mob/hero@3x.jpg');
-//               }}
-            
-// // ================================================== tablet hero image ===================================================== 
-//             @media screen and (min-width: $tab) {
-//               .hero {
-//                 background-image: url('../images/hero/tab/hero@1x.jpg');
-//               }}
-      
-//               @media (min-resolution: 2dppx) {
-//                 .hero {
-//                   background-image: url('../images/hero/tab/hero@2x.jpg');
-//                 }}
-            
-//             @media (min-resolution: 3dppx) {
-//                 .hero {
-//                   background-image: url('../images/hero/tab/hero@3x.jpg');
-//                 }}
-              
-// // ================================================== desktop hero image =====================================================
-//             @media screen and (min-width: $desktop) {
-//               .hero {
-//                 background-image: url('../images/hero/desk/hero@1x.jpg');
-//               }
-      
-//               @media (min-resolution: 2dppx) {
-//                 .hero {
-//                   background-image: url('../images/hero/desk/hero@2x.jpg');
-//                 }
-//               }
-//               @media (min-resolution: 3dppx) {
-//                 .hero {
-//                   background-image: url('../images/hero/desk/hero@3x.jpg');
-//                 }
-//               }
-//             }
+// Retina x3 Tablet //
+@media (min-device-pixel-ratio: 3),
+(-webkit-min-device-pixel-ratio: 3),
+(-o-min-device-pixel-ratio: 3/1),
+(min-resolution: 288dpi),
+(min-resolution: 3dppx) {
+  .hero {
+    background-image: url('/images/hero/tab/hero@x3.jpg');
+  }
+}
+}
 
+// Retina x1 Desktop //
+@media screen and  (min-width: $desktop) {
+  .hero {
+    max-width: 1600px;
+    background-image: url('../images/hero/desk/hero@x1.jpg');
+  }
+
+// Retina x2 Desktop //
+@media screen and (min-device-pixel-ratio: 2),
+screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (-o-min-device-pixel-ratio: 2/1),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../images/hero/desk/hero@x3.jpg');
+  }
+}
+
+// Retina x3 Desktop //
+@media (min-device-pixel-ratio: 3),
+(-webkit-min-device-pixel-ratio: 3),
+(-o-min-device-pixel-ratio: 3/1),
+(min-resolution: 288dpi),
+(min-resolution: 3dppx) {
+  .hero {
+    background-image: url('/images/hero/desk/hero@3x.jpg');
+    }
+  }
+}
 
 
 
