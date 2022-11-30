@@ -1,0 +1,104 @@
+/* ============================================== Footer =============================================== */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--brand-background);
+  }
+  
+  .footer-contacts__link {
+    font-style: normal;
+    color: var(--brand-footer);
+    margin-bottom: 9px;
+    @extend %nodecor;
+    @extend %transition;
+
+
+    &:hover, &:focus {
+      color: var(--brand-blue);}
+    }
+  
+  .footer-contacts__address {
+    color: var(--brand-white);
+    font-style: normal;
+    @extend %nodecor;
+    @extend %transition;
+
+    &:hover, &:focus {color: var(--brand-blue);}
+  }
+  
+  .logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .footer-contacts {
+    margin-right: 70px;
+  }
+  
+  .footer-contacts-list {
+    display: block;
+  }
+  
+  .footer-contacts-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  /* ==================================== Footer Social ================================================== */
+  
+  // .footer-soc {
+  //  margin-right: auto;
+  // }
+  .form-footer {
+    margin-left: auto;
+  }
+  
+  .footer-form__text,
+  .footer-soc__text {
+    display: inline-block;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--brand-white);
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .footer-soc-list {
+    display: flex;
+  }
+  
+  .footer-soc__link {
+    @include flexCenter();
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    // transition-property: background-color;
+    // transition-duration: 250ms;
+    // transition-timing-function: var(--timing-function);
+    @extend %transition;
+  }
+  
+  .footer-soc-list__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .footer-soc__link:hover,
+  .footer-soc__link:focus {
+    background-color: var(--brand-blue);
+  }
+  
+  .footer-soc__icon {
+    fill: var(--brand-white);
+  }

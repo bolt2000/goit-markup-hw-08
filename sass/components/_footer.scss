@@ -1,0 +1,209 @@
+/* ============================================== Footer =============================================== */
+
+.footer {
+  
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--brand-background);
+  }
+  
+  .footer-contacts__link {
+    font-style: normal;
+    color: var(--brand-footer);
+    margin-bottom: 9px;
+    @extend %nodecor;
+    @extend %transition;
+
+
+    &:hover, &:focus {
+      color: var(--brand-blue);}
+    }
+  
+  .footer-contacts__address {
+    color: var(--brand-white);
+    font-style: normal;
+    @extend %nodecor;
+    @extend %transition;
+
+    &:hover, &:focus {color: var(--brand-blue);}
+  }
+  
+  .logo-footer {
+    display: block;
+    margin-bottom: 20px;
+   
+@media screen and (max-width: 767px)
+{
+  text-align: center;
+}
+
+  }
+  
+  
+  .footer .container {
+    @media screen and (min-width: $tab) 
+    {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: calc((100% - 3 * 15px) / 2);
+      // align-items: baseline;
+    }
+
+  }
+  
+  .footer-contacts {
+    @media screen and (min-width: $tab) 
+    {
+      margin-left: 76px;
+      margin-right: 165px;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop) 
+    {
+      margin-left: 0;
+      margin-bottom: 10px;
+      margin-right: 93px;
+    }
+  }
+  
+  .footer-contacts-list {
+    display: block;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+  }
+  
+  .footer-contacts-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  /* ==================================== Footer Social ================================================== */
+  
+  .footer-soc {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $tab) {
+      text-align: center;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+      margin-right: 93px;
+    }
+ 
+  }
+
+  /* ====================================== Form ========================================================= */
+
+
+  .footer-form {
+    @media screen and (min-width: $desktop) 
+    {
+      display: flex;
+    }
+}
+
+  // .form-footer {
+  //   // margin-left: auto;
+  // }
+  
+  .footer-form__text,
+  .footer-soc__text {
+    display: inline-block;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--brand-white);
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
+
+ 
+  .footer-form-box {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 1199px)
+    {
+      text-align: center;
+    }
+  }
+  
+  .footer-soc-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-soc__link {
+    @include flexCenter();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    // transition-property: background-color;
+    // transition-duration: 250ms;
+    // transition-timing-function: var(--timing-function);
+    @extend %transition;
+  }
+  
+  .footer-soc-list__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .footer-soc__link:hover,
+  .footer-soc__link:focus {
+    background-color: var(--brand-blue);
+  }
+  
+  .footer-soc__icon {
+    fill: var(--brand-white);
+  }
+
+  
+/* =========================================== Form Footer ============================================= */
+
+
+
+
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  color: var(--brand-white);
+  padding: 15px 15px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  background-color: var(--brand-background);
+
+  @media screen and (max-width: 767px) 
+  {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  
+  @media screen and (min-width: $tab) and (max-width: 1199px)
+  {
+    width: 450px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+}
+
+.footer-form__input::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}

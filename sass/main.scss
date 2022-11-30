@@ -1,0 +1,31 @@
+// base //
+@import './base/reset';
+@import './base/body';
+@import './base/container';
+
+// utils //
+@import './utils/vars';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixin';
+
+// desktop //
+// @import './components/_index.scss';
+@import './components/logo';
+@import './components/header';
+@import './components/contacts';
+@import './components/hero';
+@import './components/activity';
+@import './components/clients';
+@import './components/features';
+@import './components/footer';
+@import './components/modal';
+@import './components/team';
+@import './components/portfolio';
+
+// desktop - buttons/
+@import './components/buttons/button-hero';
+@import './components/buttons/button-footer';
+@import './components/buttons/button-modal';
+@import './components/buttons/button-mobile';
+@import './components/buttons/button-portfolio';

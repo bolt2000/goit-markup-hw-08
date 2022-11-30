@@ -1,0 +1,57 @@
+  
+/* ===== Modal Button ===== */
+
+.modal-small-button {
+    position: absolute;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--brand-white);
+    fill: var(--brand-logo);
+    // transition: fill 250ms var(--timing-function);
+    @extend %transition;
+    cursor: pointer;
+  }
+  
+  .modal-small-button:hover .modal-button__icon,
+  .modal-small-button:focus .modal-button__icon {
+    fill: var(--brand-blue);
+  }
+  
+  .modal-button {
+    width: 200px;
+    padding: 10px 52px;
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: calc(30 / 16);
+    // display: flex;
+    // letter-spacing: 0.06em;
+    // color: var(--brand-white);
+    // background-color: var(--brand-blue);
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    // border-radius: 4px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // border: none;
+    // cursor: pointer;
+    // transition: background-color 250ms var(--timing-function);
+    @extend %button;
+
+  }
+  
+  .button-footer:hover,
+  .button-footer:focus,
+  .modal-button:focus,
+  .modal-button:hover {
+    background: var(--button-main-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  

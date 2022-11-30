@@ -1,0 +1,54 @@
+/* ========================================== Clients block============================================ */
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--brand-black);
+    margin-bottom: 50px;
+  }
+  
+  .clients-list {
+    display: flex;
+  }
+  
+  .clients-list__link {
+    @include flexCenter();
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    border: 1px solid var(--color-border-grey);
+    border-radius: 4px;
+    height: 92px;
+    width: 170px;
+    fill: var(--color-border-grey);
+    // transition-property: border fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: var(--timing-function);
+    @extend %transition;
+
+    &:hover,
+    &:focus,
+    .clients-list__icon:focus {
+      border: 1px solid var(--brand-blue);
+      outline: none;
+      fill: var(--brand-blue);
+    }
+    
+  }
+  
+  .clients-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .clients-list__link:hover,
+  .clients-list__icon:hover {
+    fill: var(--brand-blue);
+  }
