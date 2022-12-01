@@ -56,7 +56,7 @@
 }
 
 // Retina x1 Tablet //
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: $tab) and (max-width: 1199px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;

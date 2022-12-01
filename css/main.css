@@ -451,7 +451,7 @@ body {
     background-image: linear-gradient(to right, var(--hero-background-fon), var(--hero-background-fon)), url("../images/hero/mob/hero@x3.jpg");
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -459,13 +459,13 @@ body {
     background-image: linear-gradient(to right, var(--hero-background-fon), var(--hero-background-fon)), url("../images/hero/tab/hero@x1.jpg");
   }
 }
-@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-background-fon)), to(var(--hero-background-fon))), url("../images/hero/tab/hero@x2.jpg");
     background-image: linear-gradient(to right, var(--hero-background-fon), var(--hero-background-fon)), url("../images/hero/tab/hero@x2.jpg");
   }
 }
-@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 3), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 3), screen and (max-width: 1199px) and (min-resolution: 288dpi), screen and (max-width: 1199px) and (min-resolution: 3dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 288dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 3dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-background-fon)), to(var(--hero-background-fon))), url("../images/hero/tab/hero@x3.jpg");
     background-image: linear-gradient(to right, var(--hero-background-fon), var(--hero-background-fon)), url("../images/hero/tab/hero@x3.jpg");
