@@ -21,12 +21,6 @@
   .backdrop.is-hidden .modal {
     transform: translate(-50%, -70%) scale(1.1);
   }
-  
-
-// .js-speaker-form {
-//   width: 100%;
-//   padding:40px;
-// }
 
   .modal {
     position: absolute;
@@ -47,14 +41,14 @@ opacity: 1;
     @media screen and (max-width: 1199px)
      {
           max-width: 450px;
-          height: 609px;
+          // height: 609px;
           overflow: scroll;
         
       }
 
     @media  screen and (min-width: $desktop) 
     {
-      top: 35%;
+        top: 35%;
         width: 528px;
         height: 581px;
     }
@@ -81,11 +75,6 @@ opacity: 1;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-
-    // @media screen and (max-width: 767px)
-    // {
-    //   margin-bottom: 10px;
-    // }
   }
 
 

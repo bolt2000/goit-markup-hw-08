@@ -1,10 +1,6 @@
 /* ===== Hero site ===== */
 .hero {
     background-color: var(--brand-background);
-    background-image: linear-gradient(
-        to right,
-        var(--hero-background-fon),
-        var(--hero-background-fon));
     padding-top: 200px;
     padding-bottom: 280px;
     text-align: center;
@@ -23,7 +19,10 @@
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: url('../images/hero/mob/hero@x1.jpg');
+    background-image: linear-gradient(to right,
+          var(--hero-background-fon),
+          var(--hero-background-fon)),
+          url('../images/hero/mob/hero@x1.jpg');
   }
 
   // Retina x2 //
@@ -33,7 +32,10 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../images/hero/mob/hero@x2.jpg');
+      background-image: linear-gradient(to right,
+          var(--hero-background-fon),
+          var(--hero-background-fon)),
+          url('../images/hero/mob/hero@x2.jpg');
     }
   }
 
@@ -45,7 +47,10 @@
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
     .hero {
-      background-image: url('../images/hero/mob/hero@x3.jpg');
+      background-image: linear-gradient(to right,
+          var(--hero-background-fon),
+          var(--hero-background-fon)),
+          url('../images/hero/mob/hero@x3.jpg');
     }
   }
 }
@@ -55,7 +60,10 @@
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: url('../images/hero/tab/hero@x1.jpg');
+    background-image: linear-gradient(to right,
+        var(--hero-background-fon),
+        var(--hero-background-fon)),
+        url('../images/hero/tab/hero@x1.jpg');
   }
 
 
@@ -66,7 +74,10 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../images/hero/tab/hero@x2.jpg');
+      background-image: linear-gradient(to right,
+          var(--hero-background-fon),
+          var(--hero-background-fon)),
+          url('../images/hero/tab/hero@x2.jpg');
     }
   }
 
@@ -78,7 +89,10 @@
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
     .hero {
-      background-image: url('../images/hero/tab/hero@x3.jpg');
+      background-image: linear-gradient(to right,
+          var(--hero-background-fon),
+          var(--hero-background-fon)),
+          url('../images/hero/tab/hero@x3.jpg');
     }
   }
 }
@@ -86,7 +100,10 @@
 // Retina x1 Desktop //
 @media screen and (min-width: $desktop) {
   .hero {
-    background-image: url('../images/hero/desktop/1x.webp');
+    background-image: linear-gradient(to right,
+        var(--hero-background-fon),
+        var(--hero-background-fon)),
+        url('../images/hero/desktop/1x.webp');
   }
 
   // Retina x2 Desktop //
@@ -96,7 +113,10 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../images/hero/desktop/2x.webp');
+      background-image: linear-gradient(to right,
+          var(--hero-background-fon),
+          var(--hero-background-fon)),
+          url('../images/hero/desktop/2x.webp');
     }
   }
 
@@ -107,7 +127,10 @@
   (min-resolution: 288dpi),
   (min-resolution: 3dppx) {
     .hero {
-      background-image: url('../images/hero/desktop/3x.webp');
+      background-image: linear-gradient(to right,
+          var(--hero-background-fon),
+          var(--hero-background-fon)),
+          url('../images/hero/desktop/3x.webp');
     }
   }
 }
