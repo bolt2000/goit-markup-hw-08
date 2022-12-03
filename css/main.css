@@ -92,7 +92,7 @@ body {
   margin: -1px;
 }
 
-.button-menu, .button-icon-mob, .modal-small-button, .team-social__link, .modal-checkbox__icon, .comment, .modal-field__icon, .modal-field__input, .footer-soc__link, .footer-contacts__address, .footer-contacts__link, .clients-list__link, .link,
+.button-menu, .button-mobile.is-open, .modal-small-button, .team-social__link, .modal-checkbox__icon, .comment, .modal-field__icon, .modal-field__input, .footer-soc__link, .footer-contacts__address, .footer-contacts__link, .clients-list__link, .link,
 .contacts__link, .nav-list__link {
   -webkit-transition-property: color, border, fill, background-color, -webkit-box-shadow;
   transition-property: color, border, fill, background-color, -webkit-box-shadow;
@@ -1599,8 +1599,6 @@ body {
   padding: 0;
   border: none;
   background-color: transparent;
-  position: relative;
-  z-index: 3;
 }
 @media screen and (min-width: 768px) {
   .button-mobile {
@@ -1608,15 +1606,15 @@ body {
   }
 }
 
-.button-mobile__menu {
+.button-mobile__cross {
   display: none;
 }
 
-.button-mobile.is-open .button-mobile__menu {
+.button-mobile.is-open .button-mobile__cross {
   display: block;
 }
 
-.button-mobile.is-open .button-mobile__cross {
+.button-mobile.is-open .button-mobile__menu {
   display: none;
 }
 
@@ -1624,12 +1622,10 @@ body {
   display: block;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  overflow: none;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -1662,9 +1658,12 @@ body {
   }
 }
 
-.button-icon-mob {
+.button-mobile.is-open {
   cursor: pointer;
+  z-index: 1;
   position: fixed;
+  top: 2%;
+  right: 4%;
 }
 
 .button-icon-mob:hover {

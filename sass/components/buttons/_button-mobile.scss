@@ -3,8 +3,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    position: relative;
-    z-index: 3;
+    // position: relative;
 
     @media screen and (min-width: 768px)  {
         display: none;
@@ -13,16 +12,15 @@
 
 }
 
-.button-mobile__menu {
+.button-mobile__cross {
     display: none;
 }
 
-.button-mobile.is-open .button-mobile__menu {
+.button-mobile.is-open .button-mobile__cross {
     display: block;
-    
     }
 
-.button-mobile.is-open .button-mobile__cross {
+.button-mobile.is-open .button-mobile__menu {
     display: none;
 }
 
@@ -32,14 +30,13 @@
   &.is-open {
       display: block;
       transform: translateY(0);
-      overflow: none;
-      
+          
     }
 
 @media screen and (max-width: 767px)
 {
   position: fixed;
-  z-index: 1;
+  // z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -62,11 +59,20 @@
 }
 
 
-.button-icon-mob {
-  @extend %transition;
-  cursor: pointer;
-  position: fixed;
-}
+.button-mobile.is-open {
+    @extend %transition;
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+    top: 2%;
+    right: 4%;
+
+  }
+
+// .button-icon-mob {
+//   @extend %transition;
+//   cursor: pointer;
+// }
 
 .button-icon-mob:hover {
 fill: var(--brand-blue);
