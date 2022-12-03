@@ -35,7 +35,8 @@
 
     @media screen and (min-width: $tab) 
     {
-      margin: 15px;
+      margin-right: 15px;
+      margin-left: 15px;
       width: calc((100% - 60px) / 2);
     }
 

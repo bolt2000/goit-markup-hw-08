@@ -32,6 +32,8 @@
   &.is-open {
       display: block;
       transform: translateY(0);
+      overflow: none;
+      
     }
 
 @media screen and (max-width: 767px)
@@ -63,7 +65,9 @@
 .button-icon-mob {
   @extend %transition;
   cursor: pointer;
+  position: fixed;
 }
+
 .button-icon-mob:hover {
 fill: var(--brand-blue);
 }

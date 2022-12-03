@@ -51,6 +51,7 @@
       display: flex;
       flex-wrap: wrap;
       margin: -15px;
+      justify-content: center;
 
     }
 
@@ -67,7 +68,7 @@
     fill: var(--color-border-grey);
     @extend %transition;
 
-    @media screen and (min-width: $mobile)
+    @media screen and (min-width: $mobile) and (max-width: 767px)
     {
       width: 210px;
     }
@@ -98,7 +99,7 @@
     
     @media screen and (min-width: $tab) and (max-width: 1199px)
     {
-      flex-basis: calc((100% - 6 * 15px) / 3);
+      flex-basis: calc(100% / 3 - 30px);
     }
     
     @media screen and (min-width: $desktop)
