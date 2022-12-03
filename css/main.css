@@ -1398,12 +1398,11 @@ body {
 
 /* ============================================ PORTFOLIO ============================================== */
 .portfolio {
-  padding: 0;
-  margin: 60px 0 60px 0;
+  padding: 60px 0 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
-    margin: 94px 0 94px 0;
+    padding: 94px 0 94px 0;
   }
 }
 
