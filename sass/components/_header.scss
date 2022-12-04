@@ -97,10 +97,11 @@
     height: 4px;
     background-color: var(--brand-blue);
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     border-radius: 2px;
     opacity: 0;
-        @media screen and (max-width: 1199px) {
+
+        @media screen and (min-width: $tab) and (max-width: 1199px) {
             bottom: -6px;
           }
   }
